@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-b4552e4e4c2a3b13a12a4a3a0ad24e7d"}, "mark": "line", "encoding": {"x": {"type": "temporal", "field": "day"}, "y": {"type": "quantitative", "field": "count"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-b4552e4e4c2a3b13a12a4a3a0ad24e7d": [{"day": "2009-02", "count": 1}, {"day": "2009-03", "count": 1}, {"day": "2009-05", "count": 1}, {"day": "2009-06", "count": 2}, {"day": "2009-11", "count": 1}, {"day": "2010-01", "count": 1}, {"day": "2010-06", "count": 2}, {"day": "2010-07", "count": 3}, {"day": "2010-09", "count": 1}, {"day": "2010-10", "count": 1}, {"day": "2010-11", "count": 2}, {"day": "2010-12", "count": 3}, {"day": "2011-01", "count": 1}, {"day": "2011-02", "count": 1}, {"day": "2011-03", "count": 3}, {"day": "2011-04", "count": 4}, {"day": "2011-05", "count": 4}, {"day": "2011-06", "count": 1}, {"day": "2011-07", "count": 1}, {"day": "2011-08", "count": 5}, {"day": "2011-09", "count": 1}, {"day": "2011-10", "count": 2}, {"day": "2011-11", "count": 3}, {"day": "2011-12", "count": 6}, {"day": "2012-01", "count": 8}, {"day": "2012-02", "count": 252}, {"day": "2012-03", "count": 498}, {"day": "2012-04", "count": 437}, {"day": "2012-05", "count": 493}, {"day": "2012-06", "count": 463}, {"day": "2012-07", "count": 348}, {"day": "2012-08", "count": 192}, {"day": "2012-09", "count": 348}, {"day": "2012-10", "count": 448}, {"day": "2012-11", "count": 461}, {"day": "2012-12", "count": 511}, {"day": "2013-01", "count": 608}, {"day": "2013-02", "count": 777}, {"day": "2013-03", "count": 788}, {"day": "2013-04", "count": 1121}, {"day": "2013-05", "count": 914}, {"day": "2013-06", "count": 810}, {"day": "2013-07", "count": 893}, {"day": "2013-08", "count": 452}, {"day": "2013-09", "count": 823}, {"day": "2013-10", "count": 855}, {"day": "2013-11", "count": 852}, {"day": "2013-12", "count": 651}, {"day": "2014-01", "count": 650}, {"day": "2014-02", "count": 773}, {"day": "2014-03", "count": 869}, {"day": "2014-04", "count": 713}, {"day": "2014-05", "count": 841}, {"day": "2014-06", "count": 858}, {"day": "2014-07", "count": 758}, {"day": "2014-08", "count": 349}, {"day": "2014-09", "count": 620}, {"day": "2014-10", "count": 708}, {"day": "2014-11", "count": 646}, {"day": "2014-12", "count": 565}, {"day": "2015-01", "count": 582}, {"day": "2015-02", "count": 637}, {"day": "2015-03", "count": 737}, {"day": "2015-04", "count": 692}, {"day": "2015-05", "count": 659}, {"day": "2015-06", "count": 702}, {"day": "2015-07", "count": 653}, {"day": "2015-08", "count": 425}, {"day": "2015-09", "count": 500}, {"day": "2015-10", "count": 703}, {"day": "2015-11", "count": 662}, {"day": "2015-12", "count": 556}, {"day": "2016-01", "count": 479}, {"day": "2016-02", "count": 636}, {"day": "2016-03", "count": 557}, {"day": "2016-04", "count": 506}, {"day": "2016-05", "count": 608}, {"day": "2016-06", "count": 579}, {"day": "2016-07", "count": 453}, {"day": "2016-08", "count": 319}, {"day": "2016-09", "count": 429}, {"day": "2016-10", "count": 475}, {"day": "2016-11", "count": 571}, {"day": "2016-12", "count": 426}, {"day": "2017-01", "count": 481}, {"day": "2017-02", "count": 511}, {"day": "2017-03", "count": 560}, {"day": "2017-04", "count": 441}, {"day": "2017-05", "count": 524}, {"day": "2017-06", "count": 532}, {"day": "2017-07", "count": 489}, {"day": "2017-08", "count": 182}, {"day": "2017-09", "count": 289}, {"day": "2017-10", "count": 491}, {"day": "2017-11", "count": 464}, {"day": "2017-12", "count": 363}, {"day": "2018-01", "count": 406}, {"day": "2018-02", "count": 425}, {"day": "2018-03", "count": 470}, {"day": "2018-04", "count": 441}, {"day": "2018-05", "count": 417}, {"day": "2018-06", "count": 503}, {"day": "2018-07", "count": 343}, {"day": "2018-08", "count": 218}, {"day": "2018-09", "count": 313}, {"day": "2018-10", "count": 417}, {"day": "2018-11", "count": 416}, {"day": "2018-12", "count": 283}, {"day": "2019-01", "count": 364}, {"day": "2019-02", "count": 400}, {"day": "2019-03", "count": 302}, {"day": "2019-04", "count": 434}, {"day": "2019-05", "count": 358}, {"day": "2019-06", "count": 358}, {"day": "2019-07", "count": 296}, {"day": "2019-08", "count": 165}, {"day": "2019-09", "count": 308}, {"day": "2019-10", "count": 371}, {"day": "2019-11", "count": 353}, {"day": "2019-12", "count": 269}, {"day": "2020-01", "count": 284}, {"day": "2020-02", "count": 447}, {"day": "2020-03", "count": 247}, {"day": "2020-04", "count": 24}, {"day": "2020-05", "count": 92}, {"day": "2020-06", "count": 238}, {"day": "2020-07", "count": 381}, {"day": "2020-08", "count": 220}, {"day": "2020-09", "count": 300}, {"day": "2020-10", "count": 366}, {"day": "2020-11", "count": 333}, {"day": "2020-12", "count": 307}, {"day": "2021-01", "count": 263}, {"day": "2021-02", "count": 324}, {"day": "2021-03", "count": 454}, {"day": "2021-04", "count": 99}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

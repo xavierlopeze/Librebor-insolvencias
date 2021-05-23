@@ -15,3 +15,4 @@ df_i_c.Announcements.apply(pd.Series)
 df_full = df_i_c.join(df_i_c.Announcements.apply(pd.Series))
 
 df_full.to_csv(filename + '.csv')
+
